@@ -1,0 +1,655 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif sans-serif;
+  text-decoration: none;
+}
+html, body, #root{
+  width: 100%;
+  height: 100%;
+}
+#root{
+  width: 100%;
+  height: 100%;
+}
+
+/* Composant style */
+.connectBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 50.67px;
+  border-radius: 5.33px;
+  color: white;
+  background-color: #45484B;
+  padding-top: 15px;
+}
+.connexionB:hover, .connexionB:active, .connexionB:focus{
+  color: white;
+  background-color: #45484B;
+}
+.connectLabel {
+  font-size: 21.33px;
+  font-weight: 500px;
+}
+.h4side{
+  font-size: 26.66px;
+  font-weight: 700;
+  padding: 0;
+}
+.p1 {
+  font-weight: 400;
+  font-Size: 17.07px;
+}
+
+.p2 {
+  font-weight: 600;
+  font-size: 18.67px;
+}
+
+.p3 {
+  font-weight: 400;
+  font-size: 18.67px;
+}
+
+.p4 {
+  width: 300px;
+  height: 72px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.p4::before {
+  content: "Entrez votre adresse e-mail ci-dessous et nous vous envoyons des instructions sur la façon de modifier votre mot de passe.";
+}
+
+label {
+  font-weight: 400;
+  font-size: 18.67px;
+}
+
+/* Formulaires */
+
+.ConnexionContainer, .InscriptionContainer{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100%;
+  height: 100vh;
+  background-image: url(./assets/img/before.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* mix-blend-mode: multiply;
+  flex-shrink: 0; */
+}
+.iconLogo{
+  width: 40px;
+  height:40px;
+}
+
+.eye {
+  position: absolute;
+  left: 58%;
+  top: 48%;
+  cursor: pointer;
+  z-index: 1;
+}
+@media screen and (max-width: 1024px) {
+  .eye {
+      left: 66%;
+    }
+}
+.formConnect{
+  background: white;
+}
+.myInput{
+  position: relative;
+  width: 320px;
+  height: 45.33px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+.myInput:focus{
+  outline: none;
+}
+.myform-check-input{
+  width: 24px;
+  height: 24px;
+}
+.monNavbar{
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+/* Sidebar */
+.Sidebar{
+  width: 18%;
+  height: 100vh;
+  background-image: url(./assets/img/before.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.Sidelogo{
+  display: inline-flex;
+  padding-right: 60px;
+  padding-top: 25px;
+  align-items: center;
+  justify-content: center;
+}
+.sidelink:hover,
+.sidelink.active {
+  background-color: #ebeaea;
+  color: black;
+}
+.sidelink:focus {
+  background-color: #ebeaea;
+  color: black;
+}
+.Libeller{
+  color: rgba(255, 255, 255, 0.87);
+  font-family: Roboto;
+  font-size: 26.663px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 21.33px;
+}
+.Leftbar{
+  width: 82%;
+  height: 100vh;
+}
+.monNavbar{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+.Outlet{
+  width: 100%; 
+  height: 90%; 
+  overflow-y: auto;
+  background-color: #ebeaea;
+}
+.DH2{
+  color: rgba(0, 0, 0, 0.87);
+    font-family: 'Roboto';
+    font-size: 30.663px;
+    font-style:normal;
+    font-weight: bold;
+    padding-left: 9px;
+    /* line-height: 74.655px; */
+}
+.search:focus{
+  outline: none;
+}
+.icon{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.Link{
+  text-decoration: none;
+}
+/* Accueil */
+.grid-container{
+  display: flex;
+}
+/* Sidebar */
+.menuSide{
+  height: 100%;
+}
+.Slogo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+}
+.Sicon{
+  width: 30px;
+  height: 30px;
+  margin-bottom: 7px;
+  margin-right: 18px;
+}
+.sidelink {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  padding: 12px 0px;
+  font-size: 20px;
+  color: white;
+}
+.iconSide {
+  margin: 0 41px;
+}
+.ico{
+  width: 23px;
+    height: 23px;
+    flex-shrink: 0;
+}
+/* 
+.textSide{
+  font-size: ;
+} */
+
+/* Partit Dashboard */
+.dashboardContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  padding: 15px 20px;
+  background-color: white;
+  font-size: bold;
+}
+/* Partit Dashboard */
+.hotelContainer{
+  /* position: relative; */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 13%;
+  padding: 15px 20px;
+  background-color: white;
+  font-size: bold;
+}
+.CardContainer{
+  /* position: relative; */
+}
+.titre{
+  width: 75%;
+}
+.hotelButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+.titreHotel{
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Roboto;
+  font-size: 31.995px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 35.195px;
+}
+/* .CardRow{
+
+} */
+.cards{
+  display: inline-flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  width: 90%;
+  /* height: 90px; */
+  margin: 20px 15px;
+  padding: 20px 25px;
+  border-radius: 15px;
+}
+.cardProfil{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  color: white;
+}
+.img-card{
+  width: 30px;
+  height: 30px;
+  /* border-radius: 100%; */
+}
+.cardLibeller{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 25px;
+  width: 75%;
+  height: 100%;
+  border-radius: 15px;
+}
+.count{
+  font-size: 32px;
+}
+.addHotel{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 25%;
+  height: 58px;
+  padding: 0px 23px;
+  padding-top: 12px;
+  justify-content: center;
+  /* align-items: center; */
+  /* gap: 10px; */
+  background-color: white;
+  color: black;
+}
+.plus{
+  color: #000;
+  /* font-family: Montserrat; */
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+/* Card de l'hotel */
+.hotelCard{
+  display: inline-flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* margin-left: 9px; */
+  margin: 20px 9px;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+  /* width: 350.573px; */
+  /* height: 409.428px; */
+  width: 95%;
+  border-radius: 13.648px;
+  background: #FAFAFA;
+}
+
+.imgHotel{
+  width: 100%;
+  height: 260px;
+  border-radius: 13.648px 13.648px 0px 0px;
+}
+.adresse{
+  color: #8D4B38;
+  /* font-family: Roboto; */
+  font-size: 12.5px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15.354px;
+  margin: 12px 20px;
+  /* 109.668% */
+}
+.nomHotel{
+  color: #222;
+  /* font-family: Roboto; */
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25.589px;
+  margin: 0px 20px;
+  margin-top: 6px;
+}
+.prixHotel{
+  margin: 0px 20px;
+  margin-top: 20px;
+}
+
+/* Modal */
+
+.modalContainer, .modalRow{
+  width: 100%; 
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalContainer{
+  background-color: #ebeaea;
+}
+.Modal{
+  height: 97%;
+  border-radius: 11px;
+  padding: 0 50px;
+  border: 1.323px solid #DDD;
+  background: #FFF;
+  position: absolute;
+  top:-4.5%;
+  left: 30%;
+  z-index: 1;
+}
+.modalHeader{
+  display: flex;
+  align-items: end;
+  height: 10%;
+  border-bottom: 2.647px solid #DDD;
+}
+.titreHeader{
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  width: 65%;
+  height: 50%;
+  display: flex;
+  /* padding: 5px; */
+  gap: 10px;
+}
+.MH2{
+  color: #555;
+  font-family: Roboto;
+  font-size: 21.742px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34.17px; /* 157.167% */
+  text-transform: uppercase;
+}
+.Micon{
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.modalBody{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalForm{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+}
+.myInputModal{
+  width: 49%;
+  height: 52.937px;
+  border-radius: 14px;
+  border: 1.323px solid #DDD;
+  padding: 0px 10px;
+  /* margin-bottom: 25px; */
+  margin: 25px 0;
+}
+.myInputModalFile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  border: 1.302px solid #DDD;
+  width: 100%;
+  height: 236px;
+  text-decoration: none;
+}
+.ModalFile{
+}
+.boutonEnv{
+  width: 178px;
+  height: 59px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  /* padding-top: 20px; */
+  border-radius: 14px;
+  background: #555;   
+}
+/*--------- Media Queries -------- */
+@media screen and (max-width:1024px) {
+  
+  .pricipal{
+    display: none;
+  }
+  .textSide{
+    font-size: 18px;
+  }
+    .Sidebar {
+      width: 6%;
+    }
+  
+    .Leftbar {
+      width: 94%;
+    }
+  
+    .h4side {
+      display: none;
+    }
+  
+    .textSide {
+      display: none;
+    }
+  
+    .Sicon {
+      margin: 0;
+      margin-bottom: 20px;
+      margin-top: -10px;
+    }
+}
+@media screen and (max-width:991px) {
+  .grid-container{
+    height: 100vh;
+  }
+  .sidebarContainer{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Sidebar{
+   width: 6%;
+  }
+  .Leftbar{
+    width: 94%;
+  }
+  .h4side{
+    display: none;
+  }
+  .textSide{
+    display: none;
+  }
+  .Sicon{
+    margin: 0;
+    margin-bottom: 20px;
+    margin-top: -10px;
+  }
+  .plus {
+    font-size: 16px;
+  }
+  .addHotel {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Modal{
+    left: 10%;
+    top: 5%;
+    height: 85%;
+  }
+}
+@media screen and (max-width:768px) {
+  .grid-container {
+    height: 100vh;
+    flex-direction: column-reverse;
+  }
+  .sidebarContainer{
+    display: flex;
+    flex-direction: initial;
+  }
+
+  .Sidebar {
+    width: 100%;
+    height: 10vh;
+  }
+  .Leftbar {
+    width: 100%;
+    height: 90vh;
+  }
+  .menuSide {
+    display: flex;
+  }
+  .Sicon{
+    display: none;
+  }
+  .iconSide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sidelink{
+    height: 100%;
+  } 
+  .cards{
+    margin-left: 70px;
+    width: 80%;
+  }
+  .addHotel {
+    width: 50%;
+  /* display: none; */
+  }
+  .Modal{
+    padding: 0px 10px;
+    left: 10%;
+    height: 85%;
+    top: 2%;
+  }
+  .modalForm{
+    flex-direction: column;
+  }
+  .myInputModal{
+    width: 100%;
+    margin: 10px 0px;
+  }
+  .titreHeader{
+    width: 100%;
+  }
+  .myInputModalFile {
+    width: 100%;
+    height: 136.124px;
+   }
+  .boutonEnv{
+    margin-top: 10px;
+    background-color: #555;
+  }
+  .boutonEnv:hover, .boutonEnv:focus{
+    background-color: #555;
+  }
+}
+@media screen and (max-width:576px) {
+  .grid-container {
+      height: 100vh;
+      flex-direction: column-reverse;
+    }
+  
+    .Sidebar {
+      width: 100%;
+      height: 10vh;
+    }
+  
+    .Leftbar {
+      width: 100%;
+      height: 90vh;
+    }
+    .addHotel {
+    width: 60%;
+    display: inline-flex;
+    padding: 10px 20px;
+    gap: 10px;
+  }
+  .plus{
+    font-size: 12px;
+  }
+  
+}
+/* ------------------------------- */

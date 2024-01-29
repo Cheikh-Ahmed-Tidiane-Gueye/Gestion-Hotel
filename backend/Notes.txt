@@ -1,0 +1,75 @@
+// Pour initialiser une base de donnée : mongosh
+// Pour afficher les base de donné : show dbs
+// Pour se positionner sur ou cree une bd : use <nomDeMaBaseDeDonnée>
+// Pour afficher la bd que je vient de cree : bd
+// Pour cree une collection dans la BD : db.nomDeMaCollection.insert(One ou Many)([])
+[
+  {
+    prenom: "Cheikh Ahmed Tidiane",
+    nom: "Gueye",
+    age: 25,
+    adresse: [
+      {
+        ville: "Dakar",
+        commune: "Plateau",
+        cartier: "81 rue Ahmadou Ahmadou Ndoye",
+      },
+    ],
+  },
+  {
+    prenom: "Fatoumata Bintou",
+    nom: "Gueye",
+    age: 26,
+    adresse: [
+      {
+        ville: "Dakar",
+        commune: "Plateau",
+        cartier: "81 rue Ahmadou Ahmadou Ndoye",
+      },
+    ],
+  },
+  {
+    prenom: "Mame Oumar",
+    nom: "Gueye",
+    age: 21,
+    adresse: [
+      {
+        ville: "Dakar",
+        commune: "Plateau",
+        cartier: "81 rue Ahmadou Ahmadou Ndoye",
+      },
+    ],
+  },
+  {
+    prenom: "Sokhna Astou Kane",
+    nom: "Gueye",
+    age: 23,
+    adresse: [
+      {
+        ville: "Dakar",
+        commune: "Plateau",
+        cartier: "81 rue Ahmadou Ahmadou Ndoye",
+      },
+    ],
+  },
+  {
+    prenom: "Serigne Babacar",
+    nom: "Gueye",
+    age: 17,
+    adresse: [
+      {
+        ville: "Dakar",
+        commune: "Plateau",
+        cartier: "81 rue Ahmadou Ahmadou Ndoye",
+      },
+    ],
+  },
+];
+// Pour afficher les collections de la base de donnée : show collections
+// Pour afficher les données d'une collection : db.nomDeMaCollection.find()
+// Pour afficher un nombre precis de donnée dans une collection : db.nomDeMaCollection.find().limit(n)
+// Pour suprimer ma base de donnée : db.dropDatabase()
+
+// ---------------------------------------------------
+
+// - Un middleware (intergiciel en français) : c'est une fonction ou un ensemble de fonctions qui s'exécute avant que la requête n'atteigne la route finale dans une application web. Il intervient au milieu (d'où le nom) du processus de traitement des requêtes et des réponses. Les middlewares sont largement utilisés dans les frameworks web, tels qu'Express.js pour Node.js, Flask pour Python, ou Django, pour effectuer des opérations telles que l'authentification, la validation, le logging, etc.
